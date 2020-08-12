@@ -1,0 +1,37 @@
+{
+  "name": "lvlo/seat-autoremove",
+  "description": "SeAT Tool to autoremove members that left your corporation",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Morgan YVON",
+      "email": "morgan@elysaa.net"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Lvlo\\Rules\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+    },
+    "classmap": [
+    ]
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.3",
+    "eveseat/web": "~3",
+    "eveseat/console": "~3"
+  },
+  "require-dev": {
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Lvlo\\Autoremove\\AutoremoveServiceProvider"
+      ]
+    }
+  }
+}
