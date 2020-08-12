@@ -24,7 +24,11 @@ class Autoremove extends Command
         foreach($characters as $character) {
             $corporation = $character->corporation();
             if(!is_object($corporation)) {
-                $character->delete();
+                if(!$dryRun) {
+                    $character->delete();
+                } else {
+                    $this->info(sprintf("Removing character %s", $character->name));
+                }
                 continue;
             }
             if(!in_array(intval($corporation->corporation_id), $ids)){

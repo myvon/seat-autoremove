@@ -19,5 +19,11 @@ php artisan migrate
 php artisan up
 ```
 
-And now, when you log into 'Seat', you should see a 'Autoremove' link on the left to configure it.
+And now, when you log into 'Seat', you should see a 'Autoremove' link on the left to add corporation to whitelist.
+Dont forget to add a cron task (planified task) into seat for the command autoremove:users.
+
+You can do a dry-run with : 
+```
+php artisan autoremove:users --dry-run
+```
 
