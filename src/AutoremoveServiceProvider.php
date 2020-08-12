@@ -90,6 +90,6 @@ class AutoremoveServiceProvider extends AbstractSeatPlugin
 
     public function getVersion(): string
     {
-        return "1.0";
+        return "1.0.4";
     }
 }
