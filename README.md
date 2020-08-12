@@ -1,4 +1,4 @@
-# seat-rules
+# seat-autoremove
 A module for [SeAT](https://github.com/eveseat/seat) that automatically remove users that left your corporation
 
 [![License](https://img.shields.io/badge/license-GPLv2-blue.svg?style=flat-square)](https://raw.githubusercontent.com/myvon/seat-autoremove/master/LICENSE)
