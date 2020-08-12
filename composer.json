@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Lvlo\\Rules\\": "src/"
+      "Lvlo\\Autoremove\\": "src/"
     }
   },
   "autoload-dev": {
