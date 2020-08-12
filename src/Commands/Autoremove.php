@@ -23,6 +23,10 @@ class Autoremove extends Command
 
         foreach($characters as $character) {
             $corporation = $character->corporation();
+            if(!is_object($corporation)) {
+                $this->info(sprintf("Cannot find corporation for character %s", $character->name));
+                continue;
+            }
             if(!in_array(intval($corporation->corporation_id), $ids)){
                 if(!$dryRun) {
                     CharacterInfo::find($character->character_id)->delete();
